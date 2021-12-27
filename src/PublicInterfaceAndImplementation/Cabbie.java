@@ -22,6 +22,7 @@ public class Cabbie {
     }
 
     public Cab getMyCab() {
+        System.out.println(myCab);
         return myCab;
     }
     //Public Interface Method
@@ -34,6 +35,14 @@ public class Cabbie {
         useGPS();
     }
 
+    @Override
+    public String toString() {
+        return "Cabbie{" +
+                "companyName='" + companyName + '\'' +
+                ", name='" + name + '\'' +
+                ", myCab=" + myCab +
+                '}';
+    }
 
     //Private Implementation
     private void turnRight () {

@@ -12,4 +12,30 @@ public class Cab {
         this.year = year;
         this.color = color;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    @Override
+    public String toString() {
+        return "Cab{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
